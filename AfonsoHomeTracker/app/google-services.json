@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1002915493220",
+    "firebase_url": "https://afonso-homes.firebaseio.com",
+    "project_id": "afonso-homes",
+    "storage_bucket": "afonso-homes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002915493220:android:fc7bd8933e08d30a",
+        "android_client_info": {
+          "package_name": "com.appnew.afonsohometracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002915493220-ddbg74nique44032u92se048vdoq25pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkfZNjnVtqkPJ4ZB7lhN086l8AzWqGl4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

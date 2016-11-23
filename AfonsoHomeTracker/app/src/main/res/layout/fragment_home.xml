@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appnew.afonsohometracker.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/houseblur"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:id="@+id/backImage"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/clearlogo"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/back"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/backbutton"
+        android:visibility="visible"
+        android:adjustViewBounds="false" />
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/forward"
+        android:id="@+id/forwardbutton"
+        android:visibility="visible"
+        android:adjustViewBounds="false"
+        android:layout_alignTop="@+id/backbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <SeekBar
+        android:layout_height="16dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/backbutton"
+        android:layout_toLeftOf="@id/forwardbutton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/seekBar" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/devStateText"
+        tools:text="Dev State" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="#800074BB"
+        android:layout_below="@+id/devStateText"
+        android:layout_alignStart="@+id/backbutton"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/DevSummary"
+        android:layout_alignEnd="@+id/forwardbutton" />
+
+    <ScrollView
+        android:id="@+id/ImagesLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/DevSummary"
+        android:layout_toEndOf="@+id/backbutton"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ImagesView"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
